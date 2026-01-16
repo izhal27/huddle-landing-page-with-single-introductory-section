@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-huddle-landing-page-with-single-introductory-section-dOWjapNF1_)
 - Live Site URL: [View Live Demo](https://izhal27.github.io/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
