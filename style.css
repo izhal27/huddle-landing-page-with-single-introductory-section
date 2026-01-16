@@ -1,0 +1,166 @@
+:root {
+  --magenta-400: hsl(300, 69%, 71%);
+  --purple-700: hsl(257, 40%, 49%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Courier, monospace;
+  background-image: url("./images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  background-position: -10px 0;
+  position: relative;
+  background-color: var(--purple-700);
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+header {
+  justify-self: self-start;
+  margin-bottom: 85px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 8.5rem;
+}
+
+.illustration-img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+  font-family: Poppins, Courier, monospace;
+}
+
+.desc {
+  color: white;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+button {
+  width: 50%;
+  border: none;
+  background-color: white;
+  color: var(--purple-700);
+  padding: 1.5rem;
+
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+
+  box-shadow: 2px 5px 5px rgb(74, 51, 85);
+}
+
+button:hover {
+  background-color: var(--magenta-400);
+  color: white;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 128px;
+}
+
+.icon {
+  width: 58px;
+  height: 58px;
+  fill: white;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+  }
+
+  main {
+    display: block;
+  }
+
+  .wrapper {
+    max-width: 100%;
+    padding: 55px 75px 0 75px;
+  }
+
+  .hero {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+
+  .caption {
+    margin-top: 50px;
+  }
+
+  button {
+    width: 40%;
+    padding: 1.2rem;
+    align-self: flex-start;
+  }
+
+  .text-container {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .icons {
+    justify-content: flex-end;
+    margin-top: 24px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
